@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.gms:play-services-cloud-messaging:16.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1a70cf8e40de563b362ca0d9896ea07f/transformed/jetified-play-services-cloud-messaging-16.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/749c6ef8f7fd5e7b73cee7ca5a28d381/transformed/jetified-play-services-cloud-messaging-16.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/749c6ef8f7fd5e7b73cee7ca5a28d381/transformed/jetified-play-services-cloud-messaging-16.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/749c6ef8f7fd5e7b73cee7ca5a28d381/transformed/jetified-play-services-cloud-messaging-16.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-cloud-messaging/16.0.0/66bcaa7ea2458690135561b6053cc71210dbd9dd/play-services-cloud-messaging-16.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
