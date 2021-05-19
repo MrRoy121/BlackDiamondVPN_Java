@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BlackDiamondVPN.iml" filepath="$PROJECT_DIR$/.idea/modules/BlackDiamondVPN.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BlackDiamondVPN.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BlackDiamondVPN.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BlackDiamondVPN.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BlackDiamondVPN.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BlackDiamondVPN.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BlackDiamondVPN.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BlackDiamondVPN.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BlackDiamondVPN.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/vpnLib/BlackDiamondVPN.vpnLib.iml" filepath="$PROJECT_DIR$/.idea/modules/vpnLib/BlackDiamondVPN.vpnLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/vpnLib/BlackDiamondVPN.vpnLib.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/vpnLib/BlackDiamondVPN.vpnLib.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/vpnLib/BlackDiamondVPN.vpnLib.main.iml" filepath="$PROJECT_DIR$/.idea/modules/vpnLib/BlackDiamondVPN.vpnLib.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/vpnLib/BlackDiamondVPN.vpnLib.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/vpnLib/BlackDiamondVPN.vpnLib.unitTest.iml" />
+    </modules>
+  </component>
+</project>
