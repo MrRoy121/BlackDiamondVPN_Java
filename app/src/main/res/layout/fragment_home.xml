@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8090909">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/menuss"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="15dp"
+            android:background="#F8090909"
+            android:scaleType="fitXY"
+            android:src="@drawable/menu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="@string/app_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/subscription_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="15dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <FrameLayout
+        android:id="@+id/connection_button_details_block"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="@dimen/size_20"
+        android:layout_marginEnd="@dimen/size_20"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:background="@drawable/bg"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/connection_text_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="monospace"
+                android:layout_marginTop="40dp"
+                android:text="@string/not_connected_text"
+                android:textSize="22sp"
+                android:layout_marginBottom="@dimen/size_10"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#FFFFFF" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/connection_button_block"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/connect_button_bg"
+                android:layout_margin="@dimen/size_10"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/connect_button_icon"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/power"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toTopOf="@+id/connect_button_text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/connect_button_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/start_text"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/connect_button_icon" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <TextView
+                android:id="@+id/vpn_connection_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/connection_time_bg"
+                android:textSize="22sp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <Space
+                android:layout_width="@dimen/size_2"
+                android:layout_height="@dimen/size_20"/>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/connection_detail_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/server_selection_bg"
+        android:clickable="true"
+        android:elevation="2dp"
+        android:padding="@dimen/size_16"
+        app:layout_constraintBottom_toTopOf="@+id/connection_button_details_block"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_toolbar">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/upload_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/up_down_divider"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <ImageView
+                android:id="@+id/upload_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/upload"
+                app:layout_constraintEnd_toStartOf="@+id/upload_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/upload_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/upload_text"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/upload_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/upload_icon"
+                app:layout_constraintTop_toTopOf="@+id/upload_icon" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/upload_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:text="@string/zero_text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+            </LinearLayout>
+        <View
+            android:id="@+id/up_down_divider"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@id/download_speed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/download_detail_block" />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/download_detail_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/up_down_divider">
+
+            <ImageView
+                android:id="@+id/download_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/download"
+                android:layout_gravity="center"
+                app:layout_constraintEnd_toStartOf="@+id/download_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/download_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/download_text"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/download_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/download_icon"
+                app:layout_constraintTop_toTopOf="@+id/download_icon" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/download_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:text="@string/zero_text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/server_selection_block"
+        style="@style/drawer_card"
+        android:elevation="2dp">
+
+        <ImageView
+            android:id="@+id/server_flag_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/flag"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/server_flag_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="@string/country_name"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/server_flag_des"
+            app:layout_constraintStart_toEndOf="@+id/server_flag_image"
+            app:layout_constraintTop_toTopOf="@+id/server_flag_image" />
+
+        <TextView
+            android:id="@+id/server_flag_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/IP_address"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/server_flag_image"
+            app:layout_constraintStart_toStartOf="@+id/server_flag_name"
+            app:layout_constraintTop_toBottomOf="@+id/server_flag_name" />
+
+        <TextView
+            android:id="@+id/server_flag_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:text="@string/change_text"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/server_flag_extend"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/server_flag_extend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:src="@drawable/ic_arrow_right_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight=".1"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ad_block"
+        style="@style/drawer_card"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/disconnect_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/server_selection_block">
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/banner_container_admob"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/admob_banner_id"
+            ads:layout_constraintBottom_toBottomOf="parent"
+            ads:layout_constraintEnd_toEndOf="parent"
+            ads:layout_constraintStart_toStartOf="parent"
+            ads:layout_constraintTop_toTopOf="parent" />
+
+        <com.facebook.ads.NativeAdLayout
+            android:id="@+id/banner_container_facebook"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
